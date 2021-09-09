@@ -10,10 +10,14 @@ const Layout = ({
     urlBg,
     colorBg
 }) => {
-    const layoutStyle = {
-        backgroundImage: urlBg && `url(${urlBg})`,
-        backgroundColor: colorBg,
-    };
+    const layoutStyle = urlBg ?
+        {
+            backgroundImage: `url(${urlBg})`
+        } :
+        {
+            backgroundColor: colorBg
+        };
+
     return ( <
         section class = {
             styles.root
@@ -52,5 +56,5 @@ const Layout = ({
         } <
         /section>
     );
-}
+};
 export default Layout

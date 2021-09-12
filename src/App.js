@@ -1,24 +1,16 @@
-import logo from "./logo.svg";
-import "./App.css";
+/** @format */
+import logo from './logo.svg';
+import './App.css';
 
 function App() {
-  return ( <
-    div className = "App" > {
-      " "
-    } <
-    header className = "App-header" > {
-      " "
-    } <
-    img src = {
-      logo
-    }
-    className = "App-logo"
-    alt = "logo" / > < p > hellp d < /p>{" "} < /
-    header > {
-      " "
-    } < /
-    div >
-  );
+	return (
+		<div className='App'>
+			<header className='App-header'>
+				{count}
+				<img src={logo} className='App-logo' alt='logo' />
+			</header>
+		</div>
+	);
 }
 
 export default App;
